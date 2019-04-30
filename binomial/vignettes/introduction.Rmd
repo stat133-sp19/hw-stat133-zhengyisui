@@ -1,0 +1,95 @@
+---
+title: "Getting started with binomial"
+author: "Zhengyi Sui"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to binomial}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
+
+---
+
+```{r, echo = FALSE, message = FALSE}
+knitr::opts_chunk$set(collapse = T, comment = "#>")
+library(binomial)
+```
+
+## Binomial distribution
+
+The package `"binomial"` is a minimal implementation for basic manipulation of binomial distribution given probability, number of trials and number of success, and visualize the probability density and distribution. 
+
+## Compute probability given prob, trials and success
+
+You can simply use the function `bin_probability()` to compute the probability of `success` in `trials` with success probability `prob`. The outcome will be the probability corresponding to the input vector `success`.
+
+```{r}
+bin_probability(success = 1, trials = 3, prob = 0.5)
+```
+
+## Compute density of success given prob, trials
+
+You can use the function `bin_distribution()` to compute the density of every `success` in `trials` with success probability `prob`. The outcome will be a data frame containing number of success and their corresponding probability. Besides, you can visualize the data frame via barplot by function `plot(bin_distribution())`.
+
+```{r}
+bin_distribution(trials = 3, prob = 0.5)
+plot(bin_distribution(trials = 3, prob = 0.5))
+```
+
+## Compute distribution of success given prob, trials
+
+You can use the function `bin_cumulative()` to compute the cumulative distribution of every `success` in `trials` with success probability `prob`. The outcome will be a data frame containing number of success and their corresponding cumulative density. Besides, you can visualize the data frame via scatter-line plot by function `plot(bin_cumulative())`.
+
+```{r}
+bin_cumulative(trials = 3, prob = 0.5)
+plot(bin_cumulative(trials = 3, prob = 0.5))
+```
+
+## Visualize binomial variables
+
+When you want to output the number of trials and probability of success, you can simply use the funciton `bin_variable()`. The output will be a list indicating trials and probability. And further if you want to output the variables of a certain binomial distribution with known number of trials and probability of success, you can adopt `summary(bin_variable())`. This will return a list of measurements including mean, variance, mode, skewness and kurtosis under given trials and success.
+
+```{r}
+bin_variable(trials = 10, prob = 0.3)
+summary(bin_variable(trials = 10, prob = 0.3))
+```
+
+## Compute mean
+Of course, you can simply compute the mean of given binomial distribution. Using function `bin_mean()`, the result would simply be the expectation. 
+
+```{r}
+bin_mean(trials = 10, prob = 0.3)
+```
+
+## Compute variance
+Of course, you can simply compute the variance of given binomial distribution. Using function `bin_variance()`, the result would simply be the variance. 
+
+```{r}
+bin_variance(trials = 10, prob = 0.3)
+```
+
+## Compute mode
+Of course, you can simply compute the mode of given binomial distribution. Using function `bin_mode()`, the result would simply be the expectation. 
+
+```{r}
+bin_mode(trials = 10, prob = 0.3)
+```
+
+## Compute skewness
+Of course, you can simply compute the skewness of given binomial distribution. Using function `bin_skewness()`, the result would simply be the expectation. 
+
+```{r}
+bin_skewness(trials = 10, prob = 0.3)
+```
+
+
+## Compute kurtosis
+Of course, you can simply compute the kurtosis of given binomial distribution. Using function `bin_kurtosis()`, the result would simply be the expectation. 
+
+```{r}
+bin_kurtosis(trials = 10, prob = 0.3)
+```
+
+
+
+
