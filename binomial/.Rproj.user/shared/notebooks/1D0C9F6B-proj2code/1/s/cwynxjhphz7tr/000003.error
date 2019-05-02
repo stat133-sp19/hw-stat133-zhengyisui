@@ -1,0 +1,1 @@
+{"frames":[],"message":"Error in svm(label ~ NDAI + SD + CORR, data = train_set1, kernel = \"linear\",  : \n  could not find function \"svm\"\n"}

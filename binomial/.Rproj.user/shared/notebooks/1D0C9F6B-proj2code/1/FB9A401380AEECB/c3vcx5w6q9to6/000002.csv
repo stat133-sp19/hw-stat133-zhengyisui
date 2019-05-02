@@ -1,0 +1,2 @@
+"0","# corrplot, label vs all"
+"0","corrplot(cor(image1[,3:11]), type=""upper"",tl.col=""black"", tl.srt=45)"

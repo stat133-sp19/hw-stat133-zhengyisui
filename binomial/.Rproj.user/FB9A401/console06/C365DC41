@@ -1,0 +1,8 @@
+]0;~/Desktop/C133/workout03/binomial[?1034hairbears2-10-142-8-127:binomial suizhengyi$ plot(login_times_by_hour$t, login_times_by_hour$count, type = "l", pch = 20)
+]0;~/Desktop/C133/workout03/binomial[?1034hsuizhengyideMacBook-Pro:binomial suizhengyi$ plot(login_times_by_hour$t, login_times_by_hour$count,  type = "l", pch = 20)
+bash: syntax error near unexpected token `login_times_by_hour$t,'
+]0;~/Desktop/C133/workout03/binomialsuizhengyideMacBook-Pro:binomial suizhengyi$ [KsuizhengyideMacBook-Pro:binomial suizhengyi$ cd [K D[Kd[KDeskytop[K[K[K[Ktop/C154
+bash: cd: Desktop/C154: No such file or directory
+]0;~/Desktop/C133/workout03/binomialsuizhengyideMacBook-Pro:binomial suizhengyi$ ls
+DESCRIPTION	NAMESPACE	R		binomial.Rproj	man		tests
+]0;~/Desktop/C133/workout03/binomialsuizhengyideMacBook-Pro:binomial suizhengyi$ 

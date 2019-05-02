@@ -1,0 +1,8 @@
+"0","merge_data = read.csv(file = files[1], header=T)"
+"0","merge_data$team <- str_sub(files[1], 1, 3)"
+"0","for (i in 2:30){"
+"0","  new.data = read.csv(file = files[i], header=T)"
+"0","  new.data$team <- str_sub(files[i], 1, 3)"
+"0","  merge_data = rbind(merge_data, new.data)"
+"0","}"
+"0","head(merge_data)"

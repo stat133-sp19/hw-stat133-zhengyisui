@@ -1,0 +1,6 @@
+"0","# SVM
+model_svm1 = svm(label ~ NDAI + SD + CORR, data = train_set1, kernel = ""linear"", cost = 10, scale = FALSE)
+"
+"2","Error in svm(label ~ NDAI + SD + CORR, data = train_set1, kernel = ""linear"",  : 
+  could not find function ""svm""
+"
